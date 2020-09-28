@@ -25,6 +25,7 @@ html{
 .header{
     width: 100vw;
     height: 15vh;
+    padding-right: .5rem;
     background-color: var(--colorSec);
     display: flex;
     justify-content: space-between;
@@ -37,22 +38,23 @@ html{
     width: 100%;
     height: 100%;
 }
+
 .header__navbar{
-    width: 40%;
     height: 50%;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
 }
 .header__navbar ul{
     width: 100%;
     height: 50%;
-    display: flex;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    padding-right: 1rem;
 }
 .header__navbar ul li{
-    margin: .5rem;
+    margin: .3rem;
 }
+
 .header__navbar ul li a{
     text-decoration: none;
     font-family: var(--fuente);
@@ -83,4 +85,20 @@ html{
     color: var(--colorTexto3);
     font-family: var(--fuente);
     text-align: center;
+}
+.rightside{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border: var(--colorPrim) solid;
+}
+.rightside-fila{
+    width: 100%;
+    height: 2rem;
+    background-color: var(--colorSec);
+    border-radius: .6rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
