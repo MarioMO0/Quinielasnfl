@@ -86,6 +86,7 @@ html{
     font-family: var(--fuente);
     text-align: center;
 }
+/* Aqui comienza los estilos de los horarios de los partidos */
 .rightside{
     width: 80%;
     height: 100%;
@@ -96,9 +97,95 @@ html{
 }
 .rightside-fila{
     width: 98%;
-    height: 12rem;
+    height: 100%;
     background-color: var(--colorSec);
     border-radius: .6rem;
     margin: .5rem;
     flex-shrink: 0;
+    flex-direction: column;
+}
+.rightside-fila__matchtitle{
+    color: var(--colorTexto2);
+    text-align: center;
+    font-family: var(--fuente);
+}
+.rightside-fila__matchtitle h1{
+    font-size: 2.4rem;
+}
+.wrapmatches{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+.wrapmatches__team1{
+    width: 30%;
+    height: 100%;
+    border-radius: .5rem;
+}
+.wrapmatches__team1 .logo{
+    background-image: url("../imagenes/Kansas.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.wrapmatches__score1{
+    width: 20%;
+    height: 100%;
+    background-color: var(--colorTexto);
+    border-radius: .5rem;
+    margin: 0 .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapmatches__score1 h1{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-size: 1rem;
+}
+.wrapmatches__score1 h2{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.wrapmatches__score2{
+    width: 20%;
+    height: 100%;
+    background-color: var(--colorTexto);
+    border-radius: .5rem;
+    margin: 0 .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapmatches__score2 h1{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-size: 1rem;
+}
+.wrapmatches__score2 h2{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.wrapmatches__team2{
+    width: 30%;
+    height: 100%;
+    border-radius: .5rem;
+}
+.wrapmatches__team2 .logo{
+    background-image: url("../imagenes/Ravens.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
 }
