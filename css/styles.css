@@ -97,7 +97,7 @@ html{
 }
 .rightside-fila{
     width: 98%;
-    height: 100%;
+    height: auto;
     background-color: var(--colorSec);
     border-radius: .6rem;
     margin: .5rem;
@@ -108,21 +108,32 @@ html{
     color: var(--colorTexto2);
     text-align: center;
     font-family: var(--fuente);
-}
-.rightside-fila__matchtitle h1{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 .wrapmatches{
     width: 100%;
-    height: 75%;
+    height: auto;
     display: flex;
 }
-.wrapmatches__team1{
+.wrapmatches__match{
     width: 30%;
-    height: 100%;
+    height: auto;
     border-radius: .5rem;
 }
-.wrapmatches__team1 .logo{
+.wrapmatches__score{
+    width: 20%;
+    height: 100%;
+    background-color: var(--colorTexto);
+    border-radius: .5rem;
+    margin: 0 .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Aqui inician los estilos individuales */
+/* Partido 1 de 16 */
+.team1 .logo{
     background-image: url("../imagenes/Kansas.svg");
     background-position-x: center;
     background-position-y: center;
@@ -132,55 +143,403 @@ html{
     height: 100%;
     border: white solid 1px;
 }
-.wrapmatches__score1{
-    width: 20%;
-    height: 100%;
-    background-color: var(--colorTexto);
-    border-radius: .5rem;
-    margin: 0 .3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.wrapmatches__score1 h1{
-    color: var(--colorTexto2);
-    text-align: justify;
-    font-size: 1rem;
-}
-.wrapmatches__score1 h2{
+.teamname , .scorepartial{
     color: var(--colorTexto2);
     text-align: justify;
     font-weight: 100; 
 }
-.wrapmatches__score2{
-    width: 20%;
-    height: 100%;
-    background-color: var(--colorTexto);
-    border-radius: .5rem;
-    margin: 0 .3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.wrapmatches__score2 h1{
-    color: var(--colorTexto2);
-    text-align: justify;
-    font-size: 1rem;
-}
-.wrapmatches__score2 h2{
-    color: var(--colorTexto2);
-    text-align: justify;
-    font-weight: 100; 
-}
-.wrapmatches__team2{
-    width: 30%;
-    height: 100%;
-    border-radius: .5rem;
-}
-.wrapmatches__team2 .logo{
+.team2 .logo{
     background-image: url("../imagenes/Ravens.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 2 de 16 */
+.team3 .logo{
+    background-image: url("../imagenes/49ers.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team4 .logo{
+    background-image: url("../imagenes/Bears.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 3 de 16 */
+.team5 .logo{
+    background-image: url("../imagenes/Bills.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team6 .logo{
+    background-image: url("../imagenes/Bengals.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 4 de 16 */
+.team7 .logo{
+    background-image: url("../imagenes/Broncos.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team8 .logo{
+    background-image: url("../imagenes/Browns.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 5 de 16 */
+.team9 .logo{
+    background-image: url("../imagenes/Buccaneers.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team10 .logo{
+    background-image: url("../imagenes/Cardinals.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 6 de 16 */
+.team11 .logo{
+    background-image: url("../imagenes/Chargers.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team12 .logo{
+    background-image: url("../imagenes/Colts.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 7 de 16 */
+.team13 .logo{
+    background-image: url("../imagenes/Cowboys.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team14 .logo{
+    background-image: url("../imagenes/Dolphins.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 8 de 16 */
+.team15 .logo{
+    background-image: url("../imagenes/Eagles.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team16 .logo{
+    background-image: url("../imagenes/Falcons.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 9 de 16 */
+.team17 .logo{
+    background-image: url("../imagenes/Giants.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team18 .logo{
+    background-image: url("../imagenes/Jaguars.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 10 de 16 */
+.team19 .logo{
+    background-image: url("../imagenes/Jets.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team20 .logo{
+    background-image: url("../imagenes/Lions.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 11 de 16 */
+.team21 .logo{
+    background-image: url("../imagenes/Packers.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team22 .logo{
+    background-image: url("../imagenes/Panthers.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 12 de 16 */
+.team23 .logo{
+    background-image: url("../imagenes/Patriots.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team24 .logo{
+    background-image: url("../imagenes/Raiders.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* partido 13 de 16 */
+.team25 .logo{
+    background-image: url("../imagenes/Rams.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team26 .logo{
+    background-image: url("../imagenes/Redskins.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 14 de 16 */
+.team27 .logo{
+    background-image: url("../imagenes/Saints.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team28 .logo{
+    background-image: url("../imagenes/Seahawks.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 15 de 16 */
+.team29 .logo{
+    background-image: url("../imagenes/Steelers.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team30 .logo{
+    background-image: url("../imagenes/Texans.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border:white solid 1px;
+}
+/* Partido 16 de 16 */
+.team31 .logo{
+    background-image: url("../imagenes/Titans.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: white solid 1px;
+}
+.teamname , .scorepartial{
+    color: var(--colorTexto2);
+    text-align: justify;
+    font-weight: 100; 
+}
+.team32 .logo{
+    background-image: url("../imagenes/Vikings.svg");
     background-position-x: center;
     background-position-y: center;
     background-size: contain;
