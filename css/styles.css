@@ -67,24 +67,9 @@ html{
 }
 .mainContent{
     display: flex;
+    justify-content: center;
     width: 100vw;
     height: 75vh;
-}
-.sidebar{
-    width:20%;
-    height: 100%;
-    background-color: var(--colorTexto);
-    border: var(--colorPrim) solid;
-    border-radius: 1rem;
-    padding: .5rem;
-}
-.sidebar:hover{
-    border: var(--colorTexto) solid;
-}
-.sidebar h1{
-    color: var(--colorTexto3);
-    font-family: var(--fuente);
-    text-align: center;
 }
 /* Aqui comienza los estilos de los horarios de los partidos */
 .rightside{
@@ -121,7 +106,7 @@ html{
     border-radius: .5rem;
 }
 .wrapmatches__score{
-    width: 20%;
+    width: 30%;
     height: 100%;
     background-color: var(--colorTexto);
     border-radius: .5rem;
