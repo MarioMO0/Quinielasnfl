@@ -68,8 +68,23 @@ html{
     width: 100%;
     height: 100%;
 }
-.header-hamburguermenu{
-
+.menu{
+    position: fixed;
+    right: 0;
+    background-color: rgba(168, 218, 220, 0.9);
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    margin: .5rem 0;
+    font-family: var(--fuente);
+    font-size: 1.5rem;
 }
 .mainContent{
     display: flex;
@@ -544,13 +559,16 @@ html{
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: var(--colorPrim);
     display: block;
     line-height: 5rem;
     text-align: center;
     position: absolute;
     right: 0.5rem;
     top: 1rem;
-    color: black;
+    color:var(--colorSec);
     font-size: 2.8rem;
+}
+.burger-button:hover{
+    background-color: var(--colorDetalles);
 }
