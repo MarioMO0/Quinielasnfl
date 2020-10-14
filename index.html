@@ -8,377 +8,434 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="container">
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <figure class="header__logo">
             <img src="./imagenes/m3m.png" alt="Aqui va el logo">
         </figure>
         <nav class="menu">
             <ul>
-                <li>Mi perfil</li>
-                <li>Quinielas</li>
-                <li>Conferencias</li>
+                <li><a>Mi perfil</a></li>
+                <li><a>Quinielas</a></li>
+                <li><a>Conferencias</a></li>
             </ul>
         </nav>
     </header>
     <main class="mainContent">
         <section class="rightside">
-            <div class="rightside-fila">
-                <!-- partido 1 de 16 -->
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match         team1">
-                        <button class="logo"></button>
+            <form>
+                <input list="Semana" placeholder="Semana:" class="fechas">
+                <datalist id="Semana">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="13"></option>
+                    <option value="14"></option>
+                    <option value="15"></option>
+                    <option value="16"></option>
+                    <option value="17"></option>
+                    <option value="Comodines"></option>
+                    <option value="Juegos de divison"></option>
+                    <option value="Campeones de conferencia"></option>
+                    <option value="Pro Bowl"></option>
+                    <option value="Super Bowl"></option>
+                </datalist>
+                <div class="rightside-fila">
+                    <!-- partido 1 de 16 -->
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Chiefs</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Ravens</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team2">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 2 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team3">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">49ers</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Bears</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team4">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 3 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team5">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Bengals</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Bills</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team6">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match         team1">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Chiefs</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Ravens</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team2">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 4 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team7">
-                        <button class="logo"></button>
+                <!-- Partido 2 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Broncos</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Browns</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team8">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 5 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team9">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Buccaneers</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Cardinals</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team10">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team3">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">49ers</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Bears</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team4">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 6 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team11">
-                        <button class="logo"></button>
+                <!-- Partido 3 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Chargers</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Colts</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team12">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- partido 7 de 17 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team13">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Cowboys</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Dolphins</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team14">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team5">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Bengals</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Bills</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team6">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 8 de 18 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team15">
-                        <button class="logo"></button>
+                <!-- Partido 4 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Eagles</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Falcons</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team16">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 9 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team17">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Giants</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Jaguars</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team18">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team7">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Broncos</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Browns</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team8">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 10 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team19">
-                        <button class="logo"></button>
+                <!-- Partido 5 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Jets</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Lions</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team20">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 11 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team21">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Packers</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Panthers</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team22">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team9">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Buccaneers</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Cardinals</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team10">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 12 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team23">
-                        <button class="logo"></button>
+                <!-- Partido 6 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Patriots</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Raiders</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team24">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 13 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team25">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Rams</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Redskins</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team26">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team11">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Chargers</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Colts</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team12">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 14 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team27">
-                        <button class="logo"></button>
+                <!-- partido 7 de 17 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Saints</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Seahawks</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team28">
-                        <button class="logo"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Partido 15 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
-                </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team29">
-                        <button class="logo"></button>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Steelers</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Texans</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team30">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team13">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Cowboys</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Dolphins</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team14">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Partido 16 de 16 -->
-            <div class="rightside-fila">
-                <div class="rightside-fila__matchtitle">
-                    <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                <!-- Partido 8 de 18 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team15">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Eagles</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Falcons</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team16">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="wrapmatches">
-                    <div class="wrapmatches__match team31">
-                        <button class="logo"></button>
+                <!-- Partido 9 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
                     </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Titans</h1>
-                        <h2 class="scorepartial">(1-0-0)</h2>
-                    </div>
-                    <div class="wrapmatches__score">
-                        <h1 class="teamname">Vikings</h1>
-                        <h2 class="scorepartial">(1-1-0)</h2>
-                    </div>
-                    <div class="wrapmatches__match team32">
-                        <button class="logo"></button>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team17">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Giants</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Jaguars</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team18">
+                            <button class="logo"></button>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <!-- Partido 10 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team19">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Jets</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Lions</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team20">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partido 11 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team21">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Packers</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Panthers</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team22">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partido 12 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team23">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Patriots</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Raiders</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team24">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partido 13 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team25">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Rams</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Redskins</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team26">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partido 14 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team27">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Saints</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Seahawks</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team28">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partido 15 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team29">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Steelers</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Texans</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team30">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partido 16 de 16 -->
+                <div class="rightside-fila">
+                    <div class="rightside-fila__matchtitle">
+                        <h1>Lunes, 28 de Septiembre 2020 a las 18:00 hrs.</h1>
+                    </div>
+                    <div class="wrapmatches">
+                        <div class="wrapmatches__match team31">
+                            <button class="logo"></button>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Titans</h1>
+                            <h2 class="scorepartial">(1-0-0)</h2>
+                        </div>
+                        <div class="wrapmatches__score">
+                            <h1 class="teamname">Vikings</h1>
+                            <h2 class="scorepartial">(1-1-0)</h2>
+                        </div>
+                        <div class="wrapmatches__match team32">
+                            <button class="logo"></button>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="enviar">
+            </form>    
         </section>
     </main>
-    <footer>
-        <h1>Hola soy un h1 en el footer</h1>
+    <footer class="footer">
+        <section class="footer__followus">
+            <h2>Siguenos en</h2>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/M3moryOficial/"><i class="icon-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="icon-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="icon-twitter-square"></i></a>
+                </li>
+            </ul>
+        </section>
+        <!-- <h3>Hecho con el 💙</h3> -->
     </footer>
+    <script>
+        const menu=document.querySelector('.menu');
+        const burgerButton=document.querySelector('#burger-menu');
+
+        burgerButton.addEventListener('click',hideshow)
+
+        function hideshow(){
+        if(menu.classList.contains('is-active')){
+            menu.classList.remove('is-active');
+        }
+        else{
+            menu.classList.add('is-active');
+        }
+        }
+    </script>
 </body>
 </html>
